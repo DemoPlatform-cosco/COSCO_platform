@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>智慧助手</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="app-header compact-header">
+    <div class="brand">
+      <img src="./COSCO_logo.png" alt="COSCO LOGO" class="brand-logo" />
+      <h1 class="brand-title">智慧助手</h1>
+    </div>
+  </header>
+
+  <main class="assistant-main">
+    <section class="assistant-stage">
+      <div class="assistant-bg" aria-hidden="true">
+        <div class="dock-lines"></div>
+        <div class="wave wave-1"></div>
+        <div class="wave wave-2"></div>
+      </div>
+
+      <div class="assistant-hero">
+        <img src="./640.png" alt="熊猫船长" class="assistant-panda" id="assistant-panda" />
+        <div class="assistant-dialog" id="assistant-dialog">
+          <div class="assistant-bubble">
+            <div class="assistant-text">Hi， 我是熊猫船长，有什么要帮忙的？</div>
+            <div class="assistant-inputs">
+              <textarea id="assistant-input" rows="4" placeholder="请输入您的问题..."></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <button class="floating-demo-btn" id="assistant-demo-btn">对话演示</button>
+  <script src="./assistant.js"></script>
+</body>
+</html>
+
+

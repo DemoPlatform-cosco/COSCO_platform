@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>货物跟踪</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="app-header compact-header">
+    <div class="brand">
+      <img src="./COSCO_logo.png" alt="COSCO LOGO" class="brand-logo" />
+      <div id="track-clock" class="header-clock"></div>
+      <h1 class="brand-title">货物跟踪平台</h1>
+    </div>
+  </header>
+
+  <main class="screen-main">
+    <section class="screen-stage">
+      <aside class="metrics-panel">
+        <div class="metric-card">
+          <div class="metric-title">年运输总量（TEU）</div>
+          <canvas id="chart-yearly"></canvas>
+        </div>
+        <div class="metric-card">
+          <div class="metric-title">逐月运输量（TEU）</div>
+          <canvas id="chart-monthly"></canvas>
+        </div>
+      </aside>
+      <div class="globe-wrap">
+        <canvas class="globe-canvas"></canvas>
+        <div class="globe-overlay"></div>
+      </div>
+      <aside class="status-panel">
+        <div class="status-card">
+          <div class="status-title">集装箱信息</div>
+          <img src="./imag01.jpg" alt="集装箱" class="status-photo" />
+          <div class="status-row"><span>集装箱号</span><strong>37896</strong></div>
+        </div>
+        <div class="status-card">
+          <div class="status-title">运输计划</div>
+          <div class="status-row"><span>预计到港</span><strong>2025-11-23 16:20 GMT+8</strong></div>
+          <div class="status-row"><span>出发地</span><strong>上海洋山（CN SHANGHAI）</strong></div>
+          <div class="status-row"><span>目的地</span><strong>鹿特丹（NL ROTTERDAM）</strong></div>
+        </div>
+        <div class="status-card">
+          <div class="status-title">实时位置</div>
+          <div class="status-row"><span>经纬度</span><strong>36.12°N, 5.08°W</strong></div>
+        </div>
+      </aside>
+      
+    </section>
+  </main>
+
+  <script src="./track.js"></script>
+</body>
+</html>
+
+
